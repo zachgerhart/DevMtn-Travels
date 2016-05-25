@@ -22,7 +22,7 @@ angular.module('devmtnTravel', ['ui.router'])
                 controllerAs: 'vm'
             })
             .state('booked',{
-                url:'/booked:id',
+                url:'/booked/:id',
                 templateUrl: "../views/booked.html",
                 controller: 'mainCtrl',
                 controllerAs: 'vm'
