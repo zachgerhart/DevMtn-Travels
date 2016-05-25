@@ -4,19 +4,19 @@
 }
 
 .about-image {
-    width: 35%;
+    width: 400px;
     text-align: center;
     padding-top: 26px;
 
 }
 
 .about-image img {
-    width: 70%;
+    width: 90%;
 }
 
 
 .about-inner-right {
-    width: 70%;
+    width: 60%;
 }
 
 .about-inner-intro {
