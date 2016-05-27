@@ -2,13 +2,15 @@
 
 ### Objective
 
+####
 Create an Angular application that uses routes to navigate through a travel site. You will be able to use routes and sub routes by the end of this project.
 In this repo, you'll continue to practice fundamental Angular principles you've learned like controller and services.
 
 
 
-#### Application Design
+### Application Design
 
+####
 This is located in the images folder in this project.
 
 ![Application Design](https://github.com/DevMountain/DevMtn-Travels/blob/master/img/DevMtn-Travels.png?raw=true, "Application Design")
@@ -45,7 +47,6 @@ A few things have been included for you
 * views - All of the views have been added for you. However you will need to add some angular markup to get them to work correctly i.e. ng-repeat,ng-click
 * app.js - Only the home state has been provided. It will be up to you to determine what else is necessary. Also, note that the $urlRouterProvider has already been configured to go to the homepage as a default.
 
-####
 
 Take a look at how the routes are broken into folders. This is a very easy way to keep things modular!
 * 'styles/' folder -- stores all of our associated css files
@@ -60,7 +61,6 @@ Take a look at the index.html page.
 * The ui-router script tag is separate from Angular. It doesn't come built in with Angular
 * &lt;ui-view></ui-view&gt; is included and inside of our index.html
 
-####
 
 The &lt;ui-view></ui-view&gt; element and it's placement is crucial to understanding how routing works.
 The router is going to take that element and inject certain templates (html pages) into it depending on which route we're using.
@@ -74,9 +74,6 @@ Once you feel VERY comfortable with the existing codebase, move on to the next s
 ####
 
 In this step, we need to set up five more state views in our app.js.
-
-####
-
 Go ahead and add the following state views.
 
 * `/packages` - For all packages
@@ -86,11 +83,8 @@ Go ahead and add the following state views.
 * `/contact` - This is going to be a sub route of the home page
 
 
-####
-
 By setting up the router, we are telling our app which options it has in terms of which views we can see based on url, and what contents are related to those views such as our html templates or controllers.
 
-####
 
 When you are done, your code should look something like this.
 Make sure you create controllers for the packages, booked and locations. Be sure to organize them in a controllers folder and link them in a script tag at the bottom of your html file. And then add the controllers to your state object.
@@ -98,7 +92,7 @@ Make sure you create controllers for the packages, booked and locations. Be sure
 The contact.html and the about-adventurers.html are both sub routes to the home page.
 
 
-####
+
 
 ```javascript
    $stateProvider
@@ -137,6 +131,7 @@ The contact.html and the about-adventurers.html are both sub routes to the home 
 ```
 
 ####
+
 ```javascript
    $stateProvider
             .state('home',{
@@ -177,9 +172,6 @@ The contact.html and the about-adventurers.html are both sub routes to the home 
 Now that our templates and controllers have been injected into each of the states, we need to add some markup to the templates to get them to work.
 The templates we need to make changes to are the booked.html,locations.html and the packages.html. Open up those files and you will see comments guiding you through the steps
 
-####
-
-
 Go ahead to your browser and test your content. Now that we have created templates that are linked to the state config, we should be able to see them appear when the url has an appropriate extension.
 For example use the following url extension to test the packages page : http://localhost:8080/#/packages.
 
@@ -191,16 +183,12 @@ If everything works correctly, go through the index.html file and the template f
 
 Next, go ahead and create a controller for the packages,booked and locations views
 
-####
-
 Create three new files, which are listed below, and place them in the controllers folder.
 
 * locationsCtrl.js
 * packagesCtrl.js
 * bookedCtrl.js
 
-
-####
 
 Make sure that $scope and mainSrv are injected into each of the controllers. And before we get started, let's make sure that the controllers have been added to your index.html in a script source tag.
 
@@ -251,9 +239,9 @@ Now when you navigate to a view the router will know what controller it needs to
 
 ### Test Controllers
 
-Create a test variable in your controller called $scope.test and give it some value. In the associated template file that you created in the last step, put {{test}} somewhere in the file. Make sure that the value that you gave to $scope.test pops up on the view.
-
 ####
+
+Create a test variable in your controller called $scope.test and give it some value. In the associated template file that you created in the last step, put {{test}} somewhere in the file. Make sure that the value that you gave to $scope.test pops up on the view.
 
 
 ### Getting Data from service
@@ -273,6 +261,8 @@ If you followed the steps located in the views then you should see the data from
 
 ### Finish the booked.html view
 
+####
+
 Let's start by injecting $state into the bookedCtrl, if you console.log($state) you will see that we get a ton of info about our application state. What we need is the $state.params, this will give us the id being passed though the url params
 
 Now that we have the $state.params "id" we can loop over the data we are getting from our service and check if we have a object that has the same id as the $state.params, if we find a object that has that id then set that object on a $scope variable and then attach that variable to the booked view using {{}}
@@ -288,7 +278,6 @@ Now that we have the $state.params "id" we can loop over the data we are getting
 * http://docs.angularjs.org/guide/concepts
 
 
-## Contributions
 
 ### Contributions
 
@@ -296,7 +285,6 @@ Now that we have the $state.params "id" we can loop over the data we are getting
 
 If you see a problem or a typo, please fork, make the necessary changes, and create a pull request so we can review your changes and merge them into the master repo and branch.
 
-## Copyright
 
 ### Copyright
 
