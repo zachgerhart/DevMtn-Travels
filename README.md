@@ -1,15 +1,13 @@
-# DevMtn-Travels
+## DevMtn-Travels
 
-### Introduction
+### Objective
 
-####
-##### Objective
 Create an Angular application that uses routes to navigate through a travel site. You will be able to use routes and sub routes by the end of this project.
 In this repo, you'll continue to practice fundamental Angular principles you've learned like controller and services.
 
 
 
-## Application Design
+#### Application Design
 
 This is located in the images folder in this project.
 
@@ -18,6 +16,7 @@ This is located in the images folder in this project.
 
 
 ### Setup
+
 ####
 
 For this project you're going to need to serve your files through a live-server
@@ -33,6 +32,7 @@ For this project you're going to need to serve your files through a live-server
 
 
 ### Review the Existing Repo Code
+
 ####
 
 Take a look at the file structure and files that have been provided to you for this project.
@@ -70,6 +70,7 @@ Creating a router this way allows us to dynamically switch templates and control
 Once you feel VERY comfortable with the existing codebase, move on to the next step.
 
 ### Configure the Router
+
 ####
 
 In this step, we need to set up five more state views in our app.js.
@@ -175,6 +176,7 @@ The contact.html and the about-adventurers.html are both sub routes to the home 
 
 Now that our templates and controllers have been injected into each of the states, we need to add some markup to the templates to get them to work.
 The templates we need to make changes to are the booked.html,locations.html and the packages.html. Open up those files and you will see comments guiding you through the steps
+
 ####
 
 
@@ -248,12 +250,15 @@ Now when you navigate to a view the router will know what controller it needs to
 ```
 
 ### Test Controllers
+
 Create a test variable in your controller called $scope.test and give it some value. In the associated template file that you created in the last step, put {{test}} somewhere in the file. Make sure that the value that you gave to $scope.test pops up on the view.
 
 ####
 
 
 ### Getting Data from service
+
+####
 
 Now that we have tested the controllers and know they work we can get the data we need from the service
 We want to gain access to the travelInfo data that is present in our mainSrv by calling to the service through our controller.
@@ -263,6 +268,8 @@ Go ahead and delete the test variables you made and create new $scope variables 
 If you followed the steps located in the views then you should see the data from the service on the page. If you dont see anything make sure your getting the data in your controller from the service.
 
 * Note: The information on the booked.html view  will not display until we configure the data to the specific state by id.
+
+
 
 ### Finish the booked.html view
 
@@ -274,6 +281,7 @@ Now that we have the $state.params "id" we can loop over the data we are getting
 ### Resources
 
 ####
+
 * Controller scopes http://jsfiddle.net/8pX7p/
 * ng-repeat http://jsfiddle.net/PhCUk/1/
 * Filter http://jsfiddle.net/WS8gS/1/
