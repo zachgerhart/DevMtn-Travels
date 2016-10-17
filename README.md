@@ -113,20 +113,17 @@ The contact.html and the about-adventurers.html are both sub routes to the home 
             .state('packages',{
                 url:'',
                 templateUrl: "",
-                controller: '',
-                controllerAs: ''
+                controller: ''
             })
             .state('booked',{
                 url:'',
                 templateUrl: "",
-                controller: '',
-                controllerAs: ''
+                controller: ''
             })
             .state('locations',{
                 url:'',
                 templateUrl: "",
-                controller: '',
-                controllerAs: ''
+                controller: ''
             });
 ```
 
@@ -220,20 +217,17 @@ Now when you navigate to a view the router will know what controller it needs to
             .state('packages',{
                 url:'/packages',
                 templateUrl: "../views/packages.html",
-                controller: 'packagesCtrl',
-                controllerAs: 'vm'
+                controller: 'packagesCtrl'
             })
             .state('booked',{
                 url:'/booked/:id',
                 templateUrl: "../views/booked.html",
-                controller: 'bookedCtrl',
-                controllerAs: 'vm'
+                controller: 'bookedCtrl'
             })
             .state('locations',{
                 url:'/locations',
                 templateUrl: "../views/locations.html",
-                controller: 'lacationsCtrl',
-                controllerAs: 'vm'
+                controller: 'lacationsCtrl'
             });
 ```
 
