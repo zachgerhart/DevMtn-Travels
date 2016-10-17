@@ -87,7 +87,6 @@ By setting up the router, we are telling our app which options it has in terms o
 
 
 When you are done, your code should look something like this.
-Make sure you create controllers for the packages, booked and locations. Be sure to organize them in a controllers folder and link them in a script tag at the bottom of your html file. And then add the controllers to your state object.
 
 The contact.html and the about-adventurers.html are both sub routes to the home page.
 
@@ -113,17 +112,14 @@ The contact.html and the about-adventurers.html are both sub routes to the home 
             .state('packages',{
                 url:'',
                 templateUrl: "",
-                controller: ''
             })
             .state('booked',{
                 url:'',
                 templateUrl: "",
-                controller: ''
             })
             .state('locations',{
                 url:'',
                 templateUrl: "",
-                controller: ''
             });
 ```
 
@@ -178,7 +174,7 @@ If everything works correctly, go through the index.html file and the template f
 
 ####
 
-Next, go ahead and create a controller for the packages,booked and locations views
+Next, go ahead and create a controller for the packages, booked, and locations views
 
 Create three new files, which are listed below, and place them in the controllers folder.
 
@@ -193,8 +189,7 @@ Make sure that $scope and mainSrv are injected into each of the controllers. And
 
 #### Add controller to state object
 
-Now that we have created our controllers and added the script tags to the index.html we need to tell the router what controller it needs to use
-On the packages,booked and location states add a controller property with the value as whatever you named the associated controller.
+Now that we have created our controllers and added the script tags to the index.html we need to tell the router what controller it needs to use. On the packages, booked and location states add a controller property with the value as whatever you named the associated controller.
 Now when you navigate to a view the router will know what controller it needs to be using
 
 ####
