@@ -4,7 +4,38 @@ angular.module('devmtnTravel', ['ui.router'])
             .state('home',{
                 url:'/',
                 templateUrl: "../views/about.html"
-            });
+            })
+
+            .state('packages',{
+                url: '/packages/:country',
+                templateUrl: "../views/packages.html",
+                controller: "packagesCtrl"
+
+            })
+
+            .state('locations', {
+                url: "/locations",
+                templateUrl: "../views/locations.html",
+                controller: "locationCtrl"
+            })
+
+            .state('booked', {
+                url: "/booked/:id",
+                templateUrl: "../views/booked.html",
+                controller: "bookedCtrl"
+            })
+
+            .state('adventurers', {
+                url: "/adventurers/",
+                templateUrl: "../views/about-adventurers.html",
+                parent: ""
+            })
+
+            .state('contact', {
+                url: "/contact",
+                templateUrl: "../views/contact.html",
+                parent: ""
+            })
 
         $urlRouterProvider
             .otherwise('/');

@@ -116,10 +116,12 @@ The contact.html and the about-adventurers.html are both sub routes to the home 
             .state('booked',{
                 url:'',
                 templateUrl: "",
+                controller: "bookedCtrl.js"
             })
             .state('locations',{
                 url:'',
                 templateUrl: "",
+                controller: "locationsCtrl.js"
             });
 ```
 
