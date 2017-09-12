@@ -16,7 +16,7 @@ angular.module('devmtnTravel', ['ui.router'])
             .state('locations', {
                 url: "/locations",
                 templateUrl: "../views/locations.html",
-                controller: "locationCtrl"
+                controller: "locationsCtrl"
             })
 
             .state('booked', {

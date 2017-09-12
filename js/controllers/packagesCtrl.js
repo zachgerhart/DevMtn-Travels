@@ -1,5 +1,15 @@
-angular.module('devmtnTravel').controller('packagesCtrl', function($scope, mainSrv){
+angular.module('devmtnTravel').controller('packagesCtrl', function ($scope,$stateParams, mainSrv) {
+    // console.log($stateParams)
 
-$scope.packages = mainSrv.packageInfo;
+    $scope.packageData = mainSrv.packageInfo
+   if($stateParams.country) {
+       $scope.packageData = mainSrv.packageInfo.filter(function(val){
+           if (val.country === $stateParams.country) {
+               return val;
+           }
+       })
+   }
 
-})
+
+   
+});

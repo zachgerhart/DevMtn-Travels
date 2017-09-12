@@ -9,4 +9,4 @@ if(mainSrv.packageInfo[i].id==$stateParams.id){
 
 };
 console.log($scope.cool)
-}
+})
